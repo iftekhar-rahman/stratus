@@ -145,11 +145,11 @@
 
     
 
-    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (isIOS) {
-        $(".video-background").addClass("hide-video");
-    } else {
-    }
+    // var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    // if (isIOS) {
+    //     $(".video-background").addClass("hide-video");
+    // } else {
+    // }
 
 
 	});
