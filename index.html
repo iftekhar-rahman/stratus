@@ -12,12 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
     <!--Theme specific styles-->
-    <link href="./theme/css/antares.min.css" rel="stylesheet">
+    <link href="../theme/css/antares.min.css" rel="stylesheet">
     <link href="css/client.min.css" rel="stylesheet">
 
     <!--Core jQuery-->
-    <script src="./theme/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="./theme/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../theme/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../theme/js/jquery-migrate-1.4.1.min.js"></script>
 </head>
 
 <body>
@@ -95,22 +95,165 @@
     <!-- header ends -->
 
     <!-- homepage-slider-area starts -->
-
     <section class="homepage-slider-area">
-        <div class="hero-video overflow-hidden position-relative">
-            <div class="hero-bg" style="background-image: url(img/stock-footage-still.jpg);"></div>
-
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qZjaytzyH44?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=qZjaytzyH44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
-
-
-            <div class="video-background">
-                <div class="video-foreground">
-                    <div id="player"></div>
+        <!-- <div class="hero-bg"></div> -->
+        <div class="video-background" style="background-image: url(img/stock-footage-still.jpg);">
+            <div class="video-foreground">
+                <div id="player"></div>
+            </div>
+            <div class="homepage-slides-wrapper d-flex justify-content-center align-items-center">
+                <div class="slide-content  text-center">
+                    <h2>Over 200<br /> Prestige Cars in Stock</h2>
+                    <h4>Visit us on-site or order online</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h6>500+ 5-Star Reviews</h6>
                 </div>
             </div>
         </div>
-        <!-- Hide slider text for now -->
-        <!-- <div class="homepage-slides-wrapper custom-vh-100">
+        <!-- quick-search-form-wrapper ends -->
+        <section class="stock-search-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col search-container d-flex justify-content-between  align-items-end flex-wrap flex-lg-nowrap">
+                        <div class="single-stock-search select-make">
+                            <label for="selectmake">Select Make</label>
+                            <select name="selectmake" id="selectmake">
+                                <option value="0">All Makes</option>
+                                <option value="1">Make 1</option>
+                                <option value="2">Make 2</option>
+                                <option value="3">Make 3</option>
+                                <option value="4">Make 4</option>
+                                <option value="5">Make 5</option>
+                            </select>
+                        </div>
+                        <div class="single-stock-search select-model">
+                            <label for="selectmake">Select Model</label>
+                            <select name="selectmake" id="selectmake">
+                                <option value="0">All Models</option>
+                                <option value="1">Model 1</option>
+                                <option value="2">Model 2</option>
+                                <option value="3">Model 3</option>
+                                <option value="4">Model 4</option>
+                                <option value="5">Model 5</option>
+                            </select>
+                        </div>
+                        <div class="single-stock-search finance-range-slider-3">
+                            <div class="slider-labels position-relative">
+                                <span class="min-text">Min Price</span>
+                                <span class="max-text">Max Price</span>
+                            </div>
+                            <div id="range-slider-3" class="pm-range-slider"></div>
+                            <div class="slider-price position-relative">
+                                <input type="text" class="min-price" readonly>
+                                <input type="text" class="max-price" id="max-price" readonly>
+                            </div>
+                        </div>
+                        <div class="single-stock-search select-budget payment-method text-center">
+                            <div class="switcher-btn">
+                                <label class="switch position-relative">
+                                    <input type="checkbox" checked>
+                                    <span class="switch-slider round"><span class="cash">Cash</span> <span class="monthly">Monthly</span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="single-stock-search search-btn text-right">
+                            <button class="boxed-btn style-2" type="submit" value="submit"><i class="far fa-search"></i> Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- stock-search-area ends -->
+    </section>
+
+    <!-- <div class="homepage-slider-area"> -->
+    <!-- <div class="video-background overflow-hidden position-relative">
+        <div class="video-foreground ">
+            <div id="player"></div>
+        </div>
+        <div class="homepage-slides-wrapper">
+            <div class="owl-carousel homepage-slides">
+                <div class="single-slide-item ">
+                    <div class="slide-content  text-center">
+                        <h2>Over 200<br /> Prestige Cars in Stock</h2>
+                        <h4>Visit us on-site or order online</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h6>500+ 5-Star Reviews</h6>
+                    </div>
+                </div>
+                <div class="single-slide-item ">
+                    <div class="slide-content  text-center">
+                        <h2>Over 200<br /> Prestige Cars in Stock</h2>
+                        <h4>Visit us on-site or order online</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h6>500+ 5-Star Reviews</h6>
+                    </div>
+                </div>
+                <div class="single-slide-item ">
+                    <div class="slide-content  text-center">
+                        <h2>Over 200<br /> Prestige Cars in Stock</h2>
+                        <h4>Visit us on-site or order online</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h6>500+ 5-Star Reviews</h6>
+                    </div>
+                </div>
+                <div class="single-slide-item">
+                    <div class="slide-content  text-center">
+                        <h2>Over 200<br /> Prestige Cars in Stock</h2>
+                        <h4>Visit us on-site or order online</h4>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h6>500+ 5-Star Reviews</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- </div> -->
+
+
+    <!-- homepage-slider-area starts -->
+
+    <!-- <section class="homepage-slider-area">
+        <div class="hero-video overflow-hidden position-relative"> -->
+    <!-- <div class="hero-bg" style="background-image: url(img/stock-footage-still.jpg);"></div> -->
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qZjaytzyH44?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=qZjaytzyH44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe> -->
+
+    <!-- <div class="video-foreground">
+                <div id="player"></div>
+            </div> -->
+    <!-- Hide slider text for now -->
+    <!-- <div class="homepage-slides-wrapper custom-vh-100">
                 <div class="owl-carousel homepage-slides custom-vh-100">
                     <div class="single-slide-item custom-vh-100 d-flex align-items-center justify-content-center">
                         <div class="h-auto slide-content  text-center">
@@ -142,66 +285,10 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-
-
-
-    </section>
+    <!-- </div>
+    </section> -->
     <!-- homepage-slider-area ends -->
-    <!-- quick-search-form-wrapper ends -->
-    <section class="stock-search-area">
-        <div class="container">
-            <div class="row">
-                <div class="col search-container d-flex justify-content-between  align-items-end flex-wrap flex-lg-nowrap">
-                    <div class="single-stock-search select-make">
-                        <label for="selectmake">Select Make</label>
-                        <select name="selectmake" id="selectmake">
-                            <option value="0">All Makes</option>
-                            <option value="1">Make 1</option>
-                            <option value="2">Make 2</option>
-                            <option value="3">Make 3</option>
-                            <option value="4">Make 4</option>
-                            <option value="5">Make 5</option>
-                        </select>
-                    </div>
-                    <div class="single-stock-search select-model">
-                        <label for="selectmake">Select Model</label>
-                        <select name="selectmake" id="selectmake">
-                            <option value="0">All Models</option>
-                            <option value="1">Model 1</option>
-                            <option value="2">Model 2</option>
-                            <option value="3">Model 3</option>
-                            <option value="4">Model 4</option>
-                            <option value="5">Model 5</option>
-                        </select>
-                    </div>
-                    <div class="single-stock-search finance-range-slider-3">
-                        <div class="slider-labels position-relative">
-                            <span class="min-text">Min Price</span>
-                            <span class="max-text">Max Price</span>
-                        </div>
-                        <div id="range-slider-3" class="pm-range-slider"></div>
-                        <div class="slider-price position-relative">
-                            <input type="text" class="min-price" readonly>
-                            <input type="text" class="max-price" id="max-price" readonly>
-                        </div>
-                    </div>
-                    <div class="single-stock-search select-budget payment-method text-center">
-                        <div class="switcher-btn">
-                            <label class="switch position-relative">
-                                <input type="checkbox" checked>
-                                <span class="switch-slider round"><span class="cash">Cash</span> <span class="monthly">Monthly</span></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="single-stock-search search-btn text-right">
-                        <button class="boxed-btn style-2" type="submit" value="submit"><i class="far fa-search"></i> Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- stock-search-area ends -->
+
 
     <!-- brand-carousel-area starts -->
     <section class="make-carousel-area overflow-hidden">
@@ -530,34 +617,34 @@
     <a href="#" class="scrollTop d-none d-lg-block"><i class="fal fa-angle-up"></i></a>
 
     <!--Libraries-->
-    <script src="./theme/js/bootstrap.bundle.min.js"></script>
+    <script src="../theme/js/bootstrap.bundle.min.js"></script>
 
     <!--Plugins-->
-    <script src="./theme/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../theme/js/perfect-scrollbar.jquery.min.js"></script>
     <!--Should be used, only which pages have select dropdown-->
-    <script src="./theme/js/jquery.nice-select.min.js"></script>
+    <script src="../theme/js/jquery.nice-select.min.js"></script>
     <!--Should be used, only which pages have select dropdown-->
-    <script src="./theme/js/owl.carousel.min.js"></script>
+    <script src="../theme/js/owl.carousel.min.js"></script>
     <!--Should be used, only which pages have Owl-Carousel Slider-->
-    <script src="./theme/js/owl.lazyload.js"></script>
+    <script src="../theme/js/owl.lazyload.js"></script>
     <!--For all pages - owl lazy load images-->
     <!-- <script src="../theme/js/aos.js"></script> -->
     <!--Should be used, only for homepage-->
-    <script src="./theme/js/jqueryUI.js"></script>
+    <script src="../theme/js/jqueryUI.js"></script>
     <!--Should be used, only which pages Range/Price Slider-->
     <!-- <script src="../theme/js/jquery.slicknav.min.js"></script> -->
     <!--For all pages - Mobile menu js-->
-    <script src="./theme/js/jquery.magnific-popup.min.js"></script>
+    <script src="../theme/js/jquery.magnific-popup.min.js"></script>
     <!--Should be used, only which pages have PopUp Image/Video-->
-    <script src="./theme/js/jquery.sticky.js"></script>
+    <script src="../theme/js/jquery.sticky.js"></script>
     <!--Should be used, only on VDP page-->
-    <script src="./theme/js/jquery.unveil.js"></script>
+    <script src="../theme/js/jquery.unveil.js"></script>
     <!--For all pages - Image preloading JS-->
-    <script src="./theme/js/flickity.pkgd.min.js"></script>
+    <script src="../theme/js/flickity.pkgd.min.js"></script>
     <!--For VDP page only - car slider-->
 
     <!--Active & Custom JS-->
-    <script src="./theme/js/main.js"></script>
+    <script src="../theme/js/main.js"></script>
     <script src="./js/stratus.js"></script>
 
     <!-- JS code for Iframe video  -->
